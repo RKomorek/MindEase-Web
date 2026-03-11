@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🧠 MindEase
 
-## Getting Started
+MindEase é uma aplicação web focada em organização de tarefas e redução da sobrecarga cognitiva, oferecendo uma interface simples, moderna e adaptável para ajudar usuários a manterem foco e produtividade.
 
-First, run the development server:
+A aplicação combina Kanban de tarefas, timer Pomodoro e um painel cognitivo que permite ajustar a interface para melhorar a experiência de uso.
 
-```bash
+✨ Funcionalidades
+📋 Gerenciamento de Tarefas
+
+Organização de tarefas em formato Kanban
+
+Criação e acompanhamento de tarefas diárias
+
+Interface limpa focada em reduzir distrações
+
+⏱️ Pomodoro Timer
+
+Timer de 25 minutos de foco
+
+Controles de start, pause e reset
+
+Integrado à tela de tarefas para facilitar sessões de foco
+
+🧠 Painel Cognitivo
+
+Permite ajustar a interface para reduzir sobrecarga mental:
+
+Ajuste de cores e contraste
+
+Controle de espaçamento cognitivo
+
+Interface adaptável para diferentes necessidades
+
+⚙️ Configurações
+
+Personalização de preferências
+
+Ajustes cognitivos da interface
+
+🖥️ Estrutura da Aplicação
+
+O projeto é dividido em telas principais:
+
+Home
+ ├── Tasks (Kanban + Pomodoro)
+ ├── Panel (Painel Cognitivo)
+ └── Profile (Configurações)
+
+Cada tela utiliza um conjunto de componentes reutilizáveis e tokens de design, garantindo consistência visual e facilidade de manutenção.
+
+🧱 Arquitetura do Projeto
+
+O projeto segue uma estrutura modular:
+
+src
+ ├── app
+ │   ├── page.tsx
+ │   ├── tasks
+ │   ├── panel
+ │   └── profile
+ │
+ ├── components
+ │   ├── ui
+ │   │   ├── button
+ │   │   ├── card
+ │   │   ├── themed-view
+ │   │   └── mindease-logo
+ │
+ ├── shared
+ │   ├── hooks
+ │   │   └── use-theme-color
+ │
+ │   ├── stores
+ │   │   └── cognitive-store
+
+Principais conceitos utilizados:
+
+Componentização
+
+Design Tokens
+
+Theme System
+
+Hooks reutilizáveis
+
+🎨 Sistema de Tema
+
+A aplicação utiliza um sistema de cores dinâmico baseado em tokens:
+
+foreground
+
+background
+
+muted
+
+border
+
+Esses tokens garantem suporte automático para:
+
+Dark mode
+
+Light mode
+
+Customizações cognitivas
+
+🧰 Tecnologias Utilizadas
+
+Next.js
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+Zustand (state management)
+
+🚀 Como executar o projeto
+1️⃣ Clonar o repositório
+git clone https://github.com/seu-usuario/mindease.git
+2️⃣ Entrar na pasta do projeto
+cd mindease
+3️⃣ Instalar dependências
+npm install
+
+ou
+
+yarn install
+4️⃣ Rodar o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto ficará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+🎯 Objetivo do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto foi desenvolvido com o objetivo de:
 
-## Learn More
+Criar uma aplicação focada em produtividade e foco
 
-To learn more about Next.js, take a look at the following resources:
+Explorar boas práticas de arquitetura em React / Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Implementar interfaces adaptáveis para reduzir carga cognitiva
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📌 Possíveis melhorias futuras
 
-## Deploy on Vercel
+Persistência de tarefas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sistema de autenticação
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Estatísticas de produtividade
+
+Histórico de sessões Pomodoro
+
+Sincronização em nuvem
