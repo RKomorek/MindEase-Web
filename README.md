@@ -1,155 +1,151 @@
-🧠 MindEase
+# 🧠 MindEase
 
-MindEase é uma aplicação web focada em organização de tarefas e redução da sobrecarga cognitiva, oferecendo uma interface simples, moderna e adaptável para ajudar usuários a manterem foco e produtividade.
+MindEase é uma aplicação web focada em **organização de tarefas e redução da sobrecarga cognitiva**, oferecendo uma interface simples, moderna e adaptável para ajudar usuários a manterem foco e produtividade.
 
-A aplicação combina Kanban de tarefas, timer Pomodoro e um painel cognitivo que permite ajustar a interface para melhorar a experiência de uso.
+A aplicação combina **Kanban de tarefas, timer Pomodoro e um painel cognitivo**, permitindo que o usuário organize atividades enquanto ajusta a interface para melhorar a concentração.
 
-✨ Funcionalidades
-📋 Gerenciamento de Tarefas
+---
 
-Organização de tarefas em formato Kanban
+# ✨ Funcionalidades
 
-Criação e acompanhamento de tarefas diárias
+## 📋 Gerenciamento de Tarefas
+- Organização de tarefas em formato **Kanban**
+- Criação e acompanhamento de tarefas
+- Interface simples focada em **reduzir distrações**
 
-Interface limpa focada em reduzir distrações
+## ⏱️ Pomodoro Timer
+- Timer padrão de **25 minutos**
+- Controles de **Start, Pause e Reset**
+- Integrado à tela de tarefas para facilitar sessões de foco
 
-⏱️ Pomodoro Timer
-
-Timer de 25 minutos de foco
-
-Controles de start, pause e reset
-
-Integrado à tela de tarefas para facilitar sessões de foco
-
-🧠 Painel Cognitivo
-
+## 🧠 Painel Cognitivo
 Permite ajustar a interface para reduzir sobrecarga mental:
 
-Ajuste de cores e contraste
+- Ajuste de **cores e contraste**
+- Controle de **espaçamento cognitivo**
+- Interface adaptável para diferentes necessidades
 
-Controle de espaçamento cognitivo
+## ⚙️ Configurações
+- Personalização de preferências
+- Ajustes cognitivos da interface
 
-Interface adaptável para diferentes necessidades
+---
 
-⚙️ Configurações
-
-Personalização de preferências
-
-Ajustes cognitivos da interface
-
-🖥️ Estrutura da Aplicação
+# 🖥️ Estrutura da Aplicação
 
 O projeto é dividido em telas principais:
 
 Home
- ├── Tasks (Kanban + Pomodoro)
- ├── Panel (Painel Cognitivo)
- └── Profile (Configurações)
+├── Tasks (Kanban + Pomodoro)
+├── Panel (Painel Cognitivo)
+└── Profile (Configurações)
 
-Cada tela utiliza um conjunto de componentes reutilizáveis e tokens de design, garantindo consistência visual e facilidade de manutenção.
+---
 
-🧱 Arquitetura do Projeto
-
-O projeto segue uma estrutura modular:
+# 🧱 Estrutura do Projeto
 
 src
- ├── app
- │   ├── page.tsx
- │   ├── tasks
- │   ├── panel
- │   └── profile
- │
- ├── components
- │   ├── ui
- │   │   ├── button
- │   │   ├── card
- │   │   ├── themed-view
- │   │   └── mindease-logo
- │
- ├── shared
- │   ├── hooks
- │   │   └── use-theme-color
- │
- │   ├── stores
- │   │   └── cognitive-store
+├── app
+│ ├── page.tsx
+│ ├── tasks
+│ ├── panel
+│ └── profile
+│
+├── components
+│ ├── ui
+│ │ ├── button
+│ │ ├── card
+│ │ ├── themed-view
+│ │ └── mindease-logo
+│
+├── shared
+│ ├── hooks
+│ │ └── use-theme-color
+│ │
+│ └── stores
+│ └── cognitive-store
+
 
 Principais conceitos utilizados:
 
-Componentização
+- Componentização
+- Design Tokens
+- Theme System
+- Hooks reutilizáveis
+- State management centralizado
 
-Design Tokens
+---
 
-Theme System
+# 🎨 Sistema de Tema
 
-Hooks reutilizáveis
+A aplicação utiliza um **sistema de cores baseado em tokens**, permitindo adaptação automática da interface:
 
-🎨 Sistema de Tema
+- `foreground`
+- `background`
+- `muted`
+- `border`
 
-A aplicação utiliza um sistema de cores dinâmico baseado em tokens:
+Esses tokens garantem suporte para:
 
-foreground
+- Dark Mode
+- Light Mode
+- Customizações cognitivas
 
-background
+---
 
-muted
+# 🧰 Tecnologias Utilizadas
 
-border
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Zustand
 
-Esses tokens garantem suporte automático para:
+---
 
-Dark mode
+# 🚀 Como executar o projeto
 
-Light mode
+## 1. Clonar o repositório
 
-Customizações cognitivas
+git clone https://github.com/RKomorek/MindEase-Web
 
-🧰 Tecnologias Utilizadas
+## 2. Entrar na pasta do projeto
 
-Next.js
-
-React
-
-TypeScript
-
-Tailwind CSS
-
-Zustand (state management)
-
-🚀 Como executar o projeto
-1️⃣ Clonar o repositório
-git clone https://github.com/seu-usuario/mindease.git
-2️⃣ Entrar na pasta do projeto
 cd mindease
-3️⃣ Instalar dependências
+
+## 3. Instalar dependências
+
 npm install
 
 ou
 
 yarn install
-4️⃣ Rodar o projeto
+
+## 4. Rodar o projeto
+
 npm run dev
 
-O projeto ficará disponível em:
+## O projeto estará disponível em:
 
 http://localhost:3000
-🎯 Objetivo do Projeto
+
+---
+
+# 🎯 Objetivo do Projeto
 
 Este projeto foi desenvolvido com o objetivo de:
 
-Criar uma aplicação focada em produtividade e foco
+- Criar uma aplicação focada em **produtividade e foco**
+- Explorar **boas práticas de arquitetura em React e Next.js**
+- Desenvolver uma interface adaptável que **reduza a carga cognitiva do usuário**
 
-Explorar boas práticas de arquitetura em React / Next.js
+---
 
-Implementar interfaces adaptáveis para reduzir carga cognitiva
+# 📌 Possíveis melhorias futuras
 
-📌 Possíveis melhorias futuras
+- Persistência de tarefas
+- Sistema de autenticação
+- Estatísticas de produtividade
+- Histórico de sessões Pomodoro
+- Sincronização em nuvem
 
-Persistência de tarefas
-
-Sistema de autenticação
-
-Estatísticas de produtividade
-
-Histórico de sessões Pomodoro
-
-Sincronização em nuvem
